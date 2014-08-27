@@ -16,6 +16,16 @@
             
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    //Setting variables
+    CGFloat height;
+    CGFloat weight;
+    //Storing values
+    height = 71.0;
+    weight = 185.0;
+    //New BMI Variable
+    CGFloat bodyMassIndex = (weight / (height * height)) * 703;
+    //Log
+    NSLog(@"%f", bodyMassIndex);
 
     // Insert code here...
     
